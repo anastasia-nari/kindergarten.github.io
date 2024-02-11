@@ -2,11 +2,6 @@ ErrorDocument 404 /404.html
 
 RewriteCond %{REQUEST_FILENAME} robots.txt$ [NC]
 
-RewriteRule ^([^/]+) $1 [L]
+RewriteCond %{SERVER_PORT} !^443$
 
-RewriteCond %{HTTP_HOST} !^main--site-kindergarten-nzh\.netlify\.app
-
-RewriteRule ^(.*)$ https://main--site-kindergarten-nzh.netlify.app/$1 [R=301,L]
-
-
-http://www.site.com/
+RewriteRule ^(.*)$ http://site.ru/$1 [R=301,L]
