@@ -1,6 +1,4 @@
 User-agent: *
 Crawl-delay: 5
-Disallow: /admin
-Disallow: *?s=
-Disallow: *?p=
-Sitemap: https://main--site-kindergarten-nzh.netlify.app/
+Disallow: /admin/
+Sitemap: http://main--site-kindergarten-nzh.netlify.app/sitemap.xml
